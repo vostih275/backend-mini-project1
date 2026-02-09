@@ -1,0 +1,25 @@
+{
+  "name": "backend-mini-project1",
+  "version": "1.0.0",
+  "description": "Group backend project built with Node.js and Express using JSON file storage and EJS templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vostih275/backend-mini-project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vostih275/backend-mini-project1/issues"
+  },
+  "homepage": "https://github.com/vostih275/backend-mini-project1#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1"
+  }
+}
