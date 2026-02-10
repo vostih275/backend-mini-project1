@@ -63,7 +63,7 @@ Deadline: February 14
 Testing
 
 Basic manual testing was carried out:
--The server starts successfully using `npm start`
+-The server starts successfully using `npm init –y`
 -The `/posts` route displays all blog posts 
 -The `/posts/:id` route display a single post correctly 
 -Invalid post ID do not crash the application
