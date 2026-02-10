@@ -60,6 +60,15 @@ Document all changes in the README if you add new features
 Sample posts in posts.json should be 20+ posts for proper testing
 Deadline: February 14
 
+Testing
+
+Basic manual testing was carried out:
+-The server starts successfully using `npm start`
+-The `/posts` route displays all blog posts 
+-The `/posts/:id` route display a single post correctly 
+-Invalid post ID do not crash the application
+-JSON data is read safetly to prevent runtime error
+
 Team Members & Roles
 Member          Role / Task
 Steve Maxwell   Team Lead – Backend & posts.json
