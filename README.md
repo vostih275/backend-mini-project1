@@ -76,3 +76,9 @@ Adex            Frontend Styling – EJS templates
 Abdul-Azeez     Add sample posts to posts.json
 Opeyemi         Navigation & UX enhancements
 Olayinka        README & Documentation + basic testing
+
+Future Improvements
+-Add ability to create new blog posts
+-Add edit and delete functionality
+-Add automated tests 
+-improve UI styling
