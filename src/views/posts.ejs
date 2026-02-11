@@ -1,0 +1,67 @@
+<style>
+  *{
+    background-color: rgb(179, 178, 178);
+  }
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:2em;
+  color: blue;
+  text-align: center;
+  margin: 50px 50px;
+ /* border-bottom:2px solid black; */
+  transition: font-size 0.2s ease-in;
+  text-shadow: 1px 1px 0px 0px rebeccapurple;
+}
+
+h1:hover{
+   font-size:2.5em;
+   color:red;
+   border-bottom:0px solid black;
+}
+
+ul{
+padding:30px;
+display: inline;
+  text-align: center;
+  margin-left: 500px;
+}
+
+ul li{
+  font-size:1.5em;
+  display: inline;
+    list-style: none;
+    margin-left:100px;
+    
+}
+a{
+  text-decoration: none;
+  padding:10px;
+  display: inline;
+  margin: 10px 50px 30px 30px;
+  line-height:10px;
+  text-align: center;
+  color:blue;
+  background-color: white;
+  border-radius: 10px;
+  transform: font-size 0.2s ease;
+}
+
+a:hover{
+  color:green;
+}
+ </style> 
+<h1>All Blog Posts</h1>
+
+<% if (posts.length === 0) { %>
+  <p>No posts available yet.</p>
+<% } else { %>
+  <ul>
+    <% posts.forEach(post => { %>
+      <li>
+        <a href="/posts/<%= post.id %>">
+          <%= post.title %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>

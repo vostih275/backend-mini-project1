@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "First Blog Post",
+    "content": "This is the first post content.",
+    "author": "Steve"
+  },
+  {
+    "id": 2,
+    "title": "Second Blog Post",
+    "content": "Learning backend with Express.",
+    "author": "Team"
+  }
+]
+
