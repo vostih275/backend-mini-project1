@@ -28,8 +28,13 @@ app.get("/", (req, res) => {
 });
 
 // Import posts routes
-const postsRoutes = require("./routes/posts"); // make sure this file exists
+const postsRoutes = require("./routes/posts");
 app.use("/posts", postsRoutes);
+
+// Handle 404 for any unmatched route
+app.use((req, res) => {
+  res.status(404).render('404');
+});
 
 // ----------------------
 // Start Server
