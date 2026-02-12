@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Welcome to Our Mini Blog"
+    "title": "Welcome to Our Mini Blog",
     "content": "This is the first blog post. Here, you'll see how our posts are structured and rendered using Node.js, Express, and EJS.",
-    "author": "Steve"
+    "author": "Steve maxwell"
   },
   {
     "id": 2,
@@ -11,5 +11,7 @@
     "content": "Learning backend with Express.",
     "author": "Team"
   }
+]
+
 
 
