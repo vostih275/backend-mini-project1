@@ -1,8 +1,11 @@
+Here’s your updated README formatted cleanly and ready to paste with proper Markdown, including CSS notes and highlighting your latest modifications:
+Markdown
+Copy code
 # Backend Mini Project – Simple Blog Page
 
 ## Description
 This is a group backend project built with Node.js and Express, using JSON file storage instead of a database and EJS templates for server-side rendering.  
-The project implements a Simple Blog Page, where users can view all posts and individual posts by ID.  
+The project implements a **Simple Blog Page**, where users can view all posts and individual posts by ID.  
 
 ## Features
 - View all blog posts (`/posts`)  
@@ -10,6 +13,7 @@ The project implements a Simple Blog Page, where users can view all posts and in
 - Server-side rendering using EJS  
 - Modular backend routes (`src/routes/posts.js`)  
 - Safe JSON reading to prevent errors if `posts.json` is empty or malformed  
+- CSS styling loaded via `public/styles.css` for all pages
 
 ## Technologies
 - Node.js  
@@ -32,28 +36,25 @@ README.md      # Project documentation
 
 ## How to Run
 1. Clone the repository:
+```bash
 git clone https://github.com/vostih275/backend-mini-project1.git
-
-2. Navigate into the project:
+Navigate into the project:
 cd backend-mini-project1
-
-3. Install dependencies:
+Install dependencies:
 npm install
-
-4. Start the server:
+Start the server:
 node src/app.js
+Open your browser and visit: http://localhost:3000
 
-5. Open your browser and visit:
-http://localhost:3000
-
-6. Routes:
-- /           → Simple homepage
-- /posts      → View all blog posts
-- /posts/:id  → View a single post by ID
+Routes:
+/           → Simple homepage
+/posts      → View all blog posts
+/posts/:id  → View a single post by ID
 
 Notes & Guidelines
 No database is used; JSON file storage is implemented with the fs module
 Modular code is used for routes (routes/posts.js)
+CSS styling is served from public/styles.css and applied to all pages
 All team members must participate; commits should be visible on Git history
 No AI-generated code is allowed
 Document all changes in the README if you add new features
@@ -61,24 +62,29 @@ Sample posts in posts.json should be 20+ posts for proper testing
 Deadline: February 14
 
 Testing
-
 Basic manual testing was carried out:
--The server starts successfully using `npm init –y`
--The `/posts` route displays all blog posts 
--The `/posts/:id` route display a single post correctly 
--Invalid post ID do not crash the application
--JSON data is read safetly to prevent runtime error
+The server starts successfully using npm start or node src/app.js
+The /posts route displays all blog posts
+The /posts/:id route displays a single post correctly
+Invalid post ID does not crash the application
+JSON data is read safely to prevent runtime errors
 
 Team Members & Roles
-Member          Role / Task
-Steve Maxwell   Team Lead – Backend & posts.json
-Adex            Frontend Styling – EJS templates
-Abdul-Azeez     Add sample posts to posts.json
-Opeyemi         Navigation & UX enhancements
-Olayinka        README & Documentation + basic testing
+Member
+Role / Task
+Steve Maxwell
+Team Lead – Backend & posts.json
+Adex
+Frontend Styling – EJS templates
+Abdul-Azeez
+Add sample posts to posts.json
+Opeyemi
+Navigation & UX enhancements
+Olayinka
+README & Documentation + basic testing
 
 Future Improvements
--Add ability to create new blog posts
--Add edit and delete functionality
--Add automated tests 
--improve UI styling
+Add ability to create new blog posts
+Add edit and delete functionality
+Add automated tests
+Improve UI styling

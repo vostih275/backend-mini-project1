@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "First Blog Post",
-    "content": "This is the first post content.",
+    "title": "Welcome to Our Mini Blog"
+    "content": "This is the first blog post. Here, you'll see how our posts are structured and rendered using Node.js, Express, and EJS.",
     "author": "Steve"
   },
   {
@@ -11,5 +11,5 @@
     "content": "Learning backend with Express.",
     "author": "Team"
   }
-]
+
 

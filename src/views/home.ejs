@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+<h1>Welcome to Our Simple Blog</h1>
+<p>Stay updated with the latest posts from our team.</p>
+
+<h2>Latest Posts</h2>
+<% if (posts && posts.length > 0) { %>
+  <ul>
+    <% posts.slice(-5).reverse().forEach(post => { %>
+      <li>
+        <a href="/posts/<%= post.id %>"><%= post.title %></a> by <%= post.author %>
+      </li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No posts yet. Be the first to contribute!</p>
+<% } %>
+
+<a href="/posts">View all posts</a>
+
+<h2>Team Members</h2>
+<% if (teamMembers && teamMembers.length > 0) { %>
+  <ul>
+    <% teamMembers.forEach(member => { %>
+      <li><%= member %></li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No team members listed.</p>
+<% } %>
+
+<div style="border: 1px solid #ccc; padding: 1rem; margin-top: 2rem;">
+  <h3>About This Project</h3>
+  <p>This is a Cohort 5 Tech4Africans Backend Mini Project using Node.js, Express, EJS templates, and JSON file storage.</p>
+  <p>All posts are rendered dynamically from <code>posts.json</code>.</p>
+</div>
+
+<% if (randomQuote) { %>
+  <p style="font-style: italic; margin-top: 1rem;">Quote of the day: "<%= randomQuote %>"</p>
+<% } %>
+
+<%- include('partials/footer') %>

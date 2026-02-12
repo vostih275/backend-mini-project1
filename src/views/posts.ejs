@@ -1,3 +1,5 @@
+<%- include('partials/header') %>
+
 <h1>All Blog Posts</h1>
 
 <% if (posts.length === 0) { %>
@@ -6,10 +8,10 @@
   <ul>
     <% posts.forEach(post => { %>
       <li>
-        <a href="/posts/<%= post.id %>">
-          <%= post.title %>
-        </a>
+        <a href="/posts/<%= post.id %>"><%= post.title %></a> by <%= post.author %>
       </li>
     <% }) %>
   </ul>
 <% } %>
+
+<%- include('partials/footer') %>

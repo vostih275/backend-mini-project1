@@ -1,7 +1,15 @@
+<%- include('partials/header') %>
+
+<% if (!post) { %>
+<h2>Post not found</h2>
+<p>The post you are looking for does not exists.</p>
+<% } else { %>
 <h1><%= post.title %></h1>
 <p><%= post.content %></p>
+<p><strong>Author:</strong> <%= post.author %></p>
 <small>Author: <%= post.author %></small>
 
 <br><br>
-<a href="/posts">Back to posts</a>
+<a href="/posts">Back to posts</a><% } %>
 
+<%- include('partials/footer') %>
