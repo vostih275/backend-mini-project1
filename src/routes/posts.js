@@ -19,8 +19,8 @@ function readJSON(filePath) {
 router.get("/", (req, res) => {
   const dataPath = path.join(__dirname, "..", "data", "posts.json");
   const posts = readJSON(dataPath);
-  console.log("JSON path:", dataPath);      // log path
-  console.log("Posts loaded:", posts);     // log posts AFTER reading
+  console.log("JSON path:", dataPath);     
+  console.log("Posts loaded:", posts);
   res.render("posts", { posts });
 });
 

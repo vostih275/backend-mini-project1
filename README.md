@@ -43,7 +43,8 @@ cd backend-mini-project1
 Install dependencies:
 npm install
 Start the server:
-node src/app.js
+npm start    # Run (Production Mode)
+npm run dev    # Run (Development Mode with Auto-Reload)
 Open your browser and visit: http://localhost:3000
 
 Routes:
