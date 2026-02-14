@@ -80,6 +80,7 @@ Frontend Styling – EJS templates
 Abdul-Azeez
 Add sample posts to posts.json
 Opeyemi
+Add homepage, posts styling and CSS
 Navigation & UX enhancements
 Olayinka
 README & Documentation + basic testing

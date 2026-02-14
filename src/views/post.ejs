@@ -1,15 +1,34 @@
 <%- include('partials/header') %>
 
-<% if (!post) { %>
-<h2>Post not found</h2>
-<p>The post you are looking for does not exists.</p>
-<% } else { %>
-<h1><%= post.title %></h1>
-<p><%= post.content %></p>
-<p><strong>Author:</strong> <%= post.author %></p>
-<small>Author: <%= post.author %></small>
+<div class="single-post-container">
 
-<br><br>
-<a href="/posts">Back to posts</a><% } %>
+  <% if (!post) { %>
+    <div class="error-box">
+      <h2>Post Not Found</h2>
+      <p>The post you are looking for does not exist.</p>
+      <a href="/posts" class="btn-back">← Back to Posts</a>
+    </div>
+  <% } else { %>
+
+    <a href="/posts" class="btn-back">← Back to Posts</a>
+
+    <article class="post-full">
+      <h1 class="post-title"><%= post.title %></h1>
+
+      <div class="post-meta">
+        <span><strong>Author:</strong> <%= post.author %></span>
+        <% if (post.createdAt) { %>
+          | <span><%= post.createdAt %></span>
+        <% } %>
+      </div>
+
+      <div class="post-content">
+        <p><%= post.content %></p>
+      </div>
+    </article>
+
+  <% } %>
+
+</div>
 
 <%- include('partials/footer') %>
